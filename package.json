@@ -9,7 +9,7 @@
   },
   "scripts": {
     "dev": "nodemon index.js",
-    "start": "nodemon index.js"
+    "start": "node index.js"
   },
   "author": "Juan Pablo Parada Cao",
   "license": "ISC",
