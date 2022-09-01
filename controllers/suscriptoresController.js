@@ -221,6 +221,8 @@ const editarRutina = async (req, res) => {
 };
 
 const PostEjercicioDeRutina = async (req, res) => {
+  res.setHeader("Access-Control-Allow-Origin", "*");
+
   const { id } = req.params;
   const { ejercicio, repeticiones, dias, series } = req.body.objeto; // Desde frontend
   // const { ejercicio, repeticiones, dias } = req.body; // desde PostMan
@@ -254,6 +256,8 @@ const PostEjercicioDeRutina = async (req, res) => {
 };
 
 const EliminarEjercicioDeRutina = async (req, res) => {
+  res.setHeader("Access-Control-Allow-Origin", "*");
+
   const { id } = req.params;
   const { ejercicio } = req.query;
   let ejericioId = ejercicio;
@@ -302,6 +306,8 @@ const EliminarEjercicioDeRutina = async (req, res) => {
 };
 
 const eliminarSuscriptorId = async (req, res) => {
+  res.setHeader("Access-Control-Allow-Origin", "*");
+
   const { id } = req.params;
 
   const suscriptor = await Suscriptor.findById(id);
@@ -330,6 +336,8 @@ const eliminarSuscriptorId = async (req, res) => {
 };
 
 const verificarEstadoDeDeudas = async (req, res) => {
+  res.setHeader("Access-Control-Allow-Origin", "*");
+
   const verificarEstadoDeDeudas = async () => {
     let hoy = new Date();
     console.log("Dia de hoy: " + hoy);
