@@ -1,6 +1,4 @@
 import mongoose from "mongoose";
-import Suscriptor from "./suscriptor.js";
-import Usuario from "./Usuario.js";
 
 const PagosSchema = mongoose.Schema(
   {
