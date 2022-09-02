@@ -24,7 +24,9 @@ conectarDB();
 console.log(`La variable de entorno es ${process.env.FRONTEND_URL}`);
 
 // Configurar CORS
-const whitelist = [process.env.FRONTEND_URL];
+// Borrar la ruta y dejar el process.env
+// const whitelist = [process.env.FRONTEND_URL];
+const whitelist = "https://gestionatugimnasio2.netlify.app";
 
 const corsOptions = {
   origin: function (origin, callback) {
